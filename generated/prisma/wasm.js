@@ -130,6 +130,35 @@ exports.Prisma.UserScalarFieldEnum = {
   updatedAt: 'updatedAt'
 };
 
+exports.Prisma.BuildScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  description: 'description',
+  privacy: 'privacy',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.CategoryScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  image: 'image',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.ComponentScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  link: 'link',
+  quantity: 'quantity',
+  price: 'price',
+  categoryId: 'categoryId',
+  buildId: 'buildId',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -146,12 +175,20 @@ exports.Prisma.NullsOrder = {
 };
 exports.Role = exports.$Enums.Role = {
   USER: 'USER',
-  MODERATOR: 'MODERATOR',
   ADMIN: 'ADMIN'
 };
 
+exports.Privacy = exports.$Enums.Privacy = {
+  ME: 'ME',
+  LINK: 'LINK',
+  ALL: 'ALL'
+};
+
 exports.Prisma.ModelName = {
-  User: 'User'
+  User: 'User',
+  Build: 'Build',
+  Category: 'Category',
+  Component: 'Component'
 };
 
 /**
