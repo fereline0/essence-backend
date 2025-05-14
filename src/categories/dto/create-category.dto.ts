@@ -10,11 +10,11 @@ import {
 export class CreateCategoryDto {
   @IsString()
   @IsNotEmpty()
-  @Length(3, 32)
+  @Length(3, 64)
   name: string;
 
   @IsOptional()
   @IsUrl()
-  @MaxLength(500)
+  @MaxLength(512)
   image?: string;
 }

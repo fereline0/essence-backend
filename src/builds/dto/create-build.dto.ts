@@ -10,12 +10,12 @@ import { Privacy } from 'generated/prisma';
 export class CreateBuildDto {
   @IsString()
   @IsNotEmpty()
-  @MaxLength(100)
+  @MaxLength(128)
   name: string;
 
   @IsOptional()
   @IsString()
-  @MaxLength(500)
+  @MaxLength(512)
   description?: string;
 
   @IsOptional()
